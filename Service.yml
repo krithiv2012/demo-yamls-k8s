@@ -7,8 +7,8 @@ metadata:
     app: my-service-app-demo-nginx
 spec:
   selector:
-    name: my-po-demo-nginx
+    name: my-pod-demo-nginx
   ports:
-    nodePort: 80
+    Port: 80
     targetPort: 80
     protocol: TCP
