@@ -18,4 +18,5 @@ spec:
           image: nginx
   replicas: 1
   selector:
-    name: my-pod-demo-nginx
+    matchLabels:
+       name: my-pod-demo-nginx
