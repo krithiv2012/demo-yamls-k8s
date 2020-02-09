@@ -6,9 +6,10 @@ metadata:
     name: my-service-demo-nginx
     app: my-service-app-demo-nginx
 spec:
+  type: LoadBalancer
   selector:
     name: my-pod-demo-nginx
   ports:
-    Port: 80
-    targetPort: 80
-    protocol: TCP
+  -  port: 80
+     targetPort: 80
+     protocol: TCP
